@@ -1,5 +1,12 @@
 'use strict';
 const data=window.DUTY_DATA;
+// Friday morning exams: 10:00 AM–12:00 PM
+data.duties.forEach(d => {
+  const isFriday = new Date(d.date + 'T12:00:00Z').getUTCDay() === 5;
+  if (isFriday && d.slot === 'S-1') {
+    d.time = '10:00 AM – 12:00 PM';
+  }
+});
 const $=id=>document.getElementById(id);
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const fullDate=d=>new Intl.DateTimeFormat('en-GB',{day:'numeric',month:'long',year:'numeric',timeZone:'Asia/Dhaka'}).format(new Date(d+'T12:00:00+06:00'));
