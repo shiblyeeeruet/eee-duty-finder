@@ -1,0 +1,4 @@
+window.DUTY_CONFIG = Object.freeze({
+  feedUrl: https://script.googleusercontent.com/macros/echo?user_content_key=AUkAhnQGDxERD-fBzrDCJMLce6dQwsOUD1ZTzlnGCy_jCsABcq3bqD7tYaAktNW4ORZMb_2KyIJuB7XvUurOK3KjY9rkYXTAV4T_eQ8_yw-gIzO7DevcaiFLn7on6ckMaquZfjScodbsHIoqwbtmPWoNktdb98j2YmhIUcZxuI4feHx6IZNQWe4ub1ng4czf85Jz2KvIjX6r2x50nOAksnEep8BZ379HBzUUaA_zVwkey62ZYO1_4i-0gwiGp-YMFqDyO85lL6T16jJtwcQhfm2HdNSu5oO0kw&lib=Mx8idKvHdn-MmmklTfanTIPdZmgU60XVV,
+  refreshMs: 120000
+});
